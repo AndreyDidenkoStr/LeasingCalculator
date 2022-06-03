@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             customView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             customView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            customView.heightAnchor.constraint(equalToConstant: view.bounds.height / 4),
+            customView.heightAnchor.constraint(equalToConstant: view.bounds.height / 5),
             customView.widthAnchor.constraint(equalToConstant: view.bounds.width)
         ])
         
