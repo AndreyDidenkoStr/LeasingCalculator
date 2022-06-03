@@ -9,21 +9,33 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let customView = HeadView()
+    let headView = HeadView()
+    let bodyView = BodyView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemIndigo
+        view.backgroundColor = .systemGroupedBackground
         
-        view.addSubview(customView)
+        view.addSubview(headView)
         
-        customView.translatesAutoresizingMaskIntoConstraints = false
+        headView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            customView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            customView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            customView.heightAnchor.constraint(equalToConstant: view.bounds.height / 5),
-            customView.widthAnchor.constraint(equalToConstant: view.bounds.width)
+            headView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            headView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            headView.heightAnchor.constraint(equalToConstant: view.bounds.height / 5),
+            headView.widthAnchor.constraint(equalToConstant: view.bounds.width)
+        ])
+        
+        view.addSubview(bodyView)
+        
+        bodyView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            bodyView.topAnchor.constraint(equalTo: headView.bottomAnchor),
+            bodyView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            bodyView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            bodyView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
         
     }

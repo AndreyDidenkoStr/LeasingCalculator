@@ -12,6 +12,8 @@
 		7C5A92A1284A352F00E4DBAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A92A0284A352F00E4DBAB /* ViewController.swift */; };
 		7C5A92A6284A353000E4DBAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5A92A5284A353000E4DBAB /* Assets.xcassets */; };
 		7C5A92B2284A3B1300E4DBAB /* HeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A92B1284A3B1300E4DBAB /* HeadView.swift */; };
+		7C5A92B4284A646400E4DBAB /* BodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A92B3284A646400E4DBAB /* BodyView.swift */; };
+		7C5A92B6284A68B800E4DBAB /* ForBodyStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5A92B5284A68B800E4DBAB /* ForBodyStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7C5A92A5284A353000E4DBAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5A92AA284A353000E4DBAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C5A92B1284A3B1300E4DBAB /* HeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadView.swift; sourceTree = "<group>"; };
+		7C5A92B3284A646400E4DBAB /* BodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyView.swift; sourceTree = "<group>"; };
+		7C5A92B5284A68B800E4DBAB /* ForBodyStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForBodyStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				7C5A92B1284A3B1300E4DBAB /* HeadView.swift */,
+				7C5A92B3284A646400E4DBAB /* BodyView.swift */,
+				7C5A92B5284A68B800E4DBAB /* ForBodyStackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			files = (
 				7C5A92A1284A352F00E4DBAB /* ViewController.swift in Sources */,
 				7C5A929D284A352F00E4DBAB /* AppDelegate.swift in Sources */,
+				7C5A92B4284A646400E4DBAB /* BodyView.swift in Sources */,
 				7C5A92B2284A3B1300E4DBAB /* HeadView.swift in Sources */,
 				7C5A929F284A352F00E4DBAB /* SceneDelegate.swift in Sources */,
+				7C5A92B6284A68B800E4DBAB /* ForBodyStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

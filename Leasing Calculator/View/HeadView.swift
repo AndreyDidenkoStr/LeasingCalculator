@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HeadView: UIView {
+final class HeadView: UIView {
     
     lazy var stackView: UIStackView = {
         let stacView = UIStackView()
@@ -30,14 +30,14 @@ class HeadView: UIView {
         label.textAlignment = .center
         label.font = UIFont(name: "Monaco", size: 20)
         label.font = label.font.withSize(50)
-        label.textColor = .gray
+        label.textColor = .darkGray
         label.text = "2 444 000"
         return label
     }()
     
     lazy var buttonShowPaymentShedule: UIButton = {
         let button = UIButton()
-        button.backgroundColor = .gray
+        button.backgroundColor = .systemCyan
         button.setTitle("ПОКАЗАТЬ ГРАФИК", for: .normal)
         return button
     }()
@@ -55,7 +55,7 @@ class HeadView: UIView {
     
     
     // MARK: Setup UI
-    func setupUI() {
+    private func setupUI() {
 //        addHeadSubviews()
 //        sutupHeadConstraints()
         setupStackView()
@@ -97,7 +97,7 @@ class HeadView: UIView {
     }
     
     //MARK: Setup StackView
-    func setupStackView() {
+    private func setupStackView() {
         addHeadSubviews()
         let stackSubviews = [labelTitleMonthlyPayment, labelMonthlyPayment, buttonShowPaymentShedule]
         for view in stackSubviews {
@@ -107,6 +107,7 @@ class HeadView: UIView {
         stackView.distribution = .fillEqually
         stackView.alignment = .fill
         stackView.spacing = 10
+        stackView.backgroundColor = .systemGray5
         
         addSubview(stackView)
         
