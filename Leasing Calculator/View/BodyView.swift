@@ -31,15 +31,15 @@ class BodyView: UIView {
     
     lazy var stackPeriodOfLeasing: ForBodyStackView = {
         let stackView = ForBodyStackView()
-        stackView.labelTitle.text = "СРОК ДОГОВОРА ЛИЗИНГА"
+        stackView.labelTitle.text = "СРОК ЛИЗИНГА, МЕСЯЦЕВ"
         stackView.textField.text = "36"
         return stackView
     }()
     
     lazy var stackAppreciation: ForBodyStackView = {
         let stackView = ForBodyStackView()
-        stackView.labelTitle.text = "ПРОЦЕНТ УДОРОЖАНИЯ"
-        stackView.textField.text = "8%"
+        stackView.labelTitle.text = "ПРОЦЕНТ УДОРОЖАНИЯ, %"
+        stackView.textField.text = "8"
         return stackView
     }()
     
