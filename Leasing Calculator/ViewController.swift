@@ -35,7 +35,7 @@ class ViewController: UIViewController {
             bodyView.topAnchor.constraint(equalTo: headView.bottomAnchor),
             bodyView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             bodyView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            bodyView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            bodyView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30)
         ])
         
     }

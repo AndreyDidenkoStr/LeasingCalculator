@@ -17,17 +17,22 @@ class ForBodyStackView: UIView {
     
     lazy var labelTitle: UILabel = {
         let label = UILabel()
-        label.backgroundColor = .gray
+        label.backgroundColor = .systemGray5
         label.textAlignment = .center
+        label.font = UIFont(name: "Monaco", size: 20)
+        label.font = label.font.withSize(15)
+        label.textColor = .darkGray
         return label
     }()
     
     lazy var textField: UITextField = {
         let textField = UITextField()
-        textField.backgroundColor = .lightGray
+        textField.backgroundColor = .systemGray5
         textField.keyboardType = .numberPad
         textField.textAlignment = .center
+        textField.font = UIFont(name: "Monaco", size: 40)
         textField.font = textField.font?.withSize(40)
+        textField.textColor = .darkGray
         return textField
     }()
     

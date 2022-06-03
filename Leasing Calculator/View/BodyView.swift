@@ -18,25 +18,28 @@ class BodyView: UIView {
     lazy var stackFullPrice: ForBodyStackView = {
         let stackView = ForBodyStackView()
         stackView.labelTitle.text = "СТОИМОСТЬ ПРЕДМЕТА ЛИЗИНГА"
-        stackView.textField.placeholder = "10 000 000"
+        stackView.textField.text = "10 000 000"
         return stackView
     }()
     
     lazy var stackDownPayment: ForBodyStackView = {
         let stackView = ForBodyStackView()
         stackView.labelTitle.text = "АВАНСОВЫЙ ПЛАТЕЖ"
+        stackView.textField.text = "1 000 000"
         return stackView
     }()
     
     lazy var stackPeriodOfLeasing: ForBodyStackView = {
         let stackView = ForBodyStackView()
-        stackView.labelTitle.text = "срок договра лизинга"
+        stackView.labelTitle.text = "СРОК ДОГОВОРА ЛИЗИНГА"
+        stackView.textField.text = "36"
         return stackView
     }()
     
     lazy var stackAppreciation: ForBodyStackView = {
         let stackView = ForBodyStackView()
-        stackView.labelTitle.text = "процент удорожания"
+        stackView.labelTitle.text = "ПРОЦЕНТ УДОРОЖАНИЯ"
+        stackView.textField.text = "8%"
         return stackView
     }()
     
@@ -63,7 +66,7 @@ class BodyView: UIView {
         stackView.distribution = .fillEqually
         stackView.alignment = .fill
         stackView.spacing = 10
-        stackView.backgroundColor = .systemMint
+        stackView.backgroundColor = .systemGroupedBackground
         
         addSubview(stackView)
         
